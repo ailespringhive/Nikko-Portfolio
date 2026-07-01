@@ -231,11 +231,35 @@ h3 { font-size: 1.5rem; }
     padding-bottom: 60px;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
 .hero-text {
-    max-width: 800px;
+    flex: 1;
+    max-width: 600px;
     margin-left: 0;
     margin-right: auto;
     text-align: left;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-glass);
 }
 
 .greeting {
@@ -513,6 +537,21 @@ h3 { font-size: 1.5rem; }
 
 /* Responsive */
 @media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero-cta {
+        justify-content: center;
+    }
+
     .contact-wrapper {
         padding: 2rem;
         gap: 2rem;
