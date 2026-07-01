@@ -79,6 +79,7 @@ h3 { font-size: 1.5rem; }
 
 /* Layout Utilities */
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-lg);
@@ -232,6 +233,9 @@ h3 { font-size: 1.5rem; }
 
 .hero-text {
     max-width: 800px;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
 }
 
 .greeting {
